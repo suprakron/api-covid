@@ -1,1 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page5</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<style>
+
+
+  #main{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(146, 240, 133, 0.856);
+      padding: 40px;
+  }
+    footer {
+      text-align: center;
+      letter-spacing: 3px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      background-color: rgb(60, 178, 247);
+      color: black;
+      font-size: 1.5rem;
+    }
+  
+    #text-wrapper h1{
+      text-transform: uppercase;
+      word-spacing: 4px;
+      margin: 20px;
+      color: #8434e0;
+  
+  }
+  
+  #main-wrapper table {
+      text-align: center;
+      font-size: 20px;
+      padding: 15px 35px!important;
+  }
+  #main-wrapper table {
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 2px;
+      background-color: rgb(126, 119, 119);
+  }
+  #row {
+    text-align: center;
+      font-size: 20px;
+      letter-spacing: 2px;
+      background-color: rgb(165, 154, 154);
+  
+  }
+  #rowcovid{
+    text-align: center;
+      font-size: 20px;
+      letter-spacing: 2px;
+      background-color: rgb(175, 109, 109);
+  
+  }
+  
+  
+  @media(max-width:900px){
+     
+      #main{
+          padding: 5px!important;
+      }
+      #main-wrapper{
+          width: 100%;
+          padding: 10px;
+      }
+      #text-wrapper h1{
+          text-transform: uppercase;
+          word-spacing: normal;
+          font-size: 25px;
+          margin: 20px;
+          color: blue;
+      }
+    
+      #main-wrapper table  {
+          text-align: center;
+          font-size: 13px;
+          padding: 5px 2px!important;
+  
+      }
+  
+      #tr{
+          text-align: center;
+          font-size: 13px;
+          padding: 5px 2px!important;
+  
+      }
+  
+      #main-wrapper table  {
+          text-align: center;
+          font-size: 13px;
+          padding: 5px 2px!important;
+      }
+      footer h3{
+          font-size: 18px;
+          letter-spacing: normal;
+      }
+  
+  }
+  
+  </style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Th-covid</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Page
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="/page1">Page1</a></li>
+              <li><a class="dropdown-item" href="/page2">page2</a></li>
+              <li><a class="dropdown-item" href="/page3">page3</a></li>
+              <li><a class="dropdown-item" href="/page4">page4</a></li>
+              <li><a class="dropdown-item" href="/page5">page5</a></li>
+              <li><a class="dropdown-item" href="/page6">page6</a></li>
+              <li><a class="dropdown-item" href="/page7">page7</a></li>
+              <li><a class="dropdown-item" href="/page8">page8</a></li>
+              <li><a class="dropdown-item" href="/page9">page9</a></li>
+
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/">Home</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <!-- <form class="d-flex">
+               
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>-->
+
+      </div>
+    </div>
+  </nav>
+
+
  
+<section id="main">
+ 
+
+
+   
+
+  <div id="main-wrapper">
+    <div id="text-wrapper">
+      <h1 class="text-center">ข้อมูลผู้ป่วยระลอก 3 (ตั้งแต่ 01/04/2021 –ปัจจุบัน)</h1>
+    </div>
+
+
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border" role="status" id="loading">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+
+    <div class="table-responsive">
+      <table class="table table-bordered" id="covid">
+      </table>
+    </div>
+  </div>
+
+</section>
+
+
+
+  <footer>
+    <h3>ชื่อ..............</h3>
+  </footer>
+
+
+  <script>
+
+    const api_url =
+      "https://covid19.ddc.moph.go.th/api/Cases/round-3-line-lists";
+
+    async function getapi(url) {
+
+      const response = await fetch(url);
+      var reqjson = await response.json();
+      var data = reqjson.data;
+      console.log(data);
+      if (response) {
+        hideloader();
+      }
+      show(data);
+    }
+
+    getapi(api_url);
+
+    function hideloader() {
+      document.getElementById('loading').style.display = 'none';
+    }
+
+
+    function show(data) {
+      let tab =
+        `<tr id="row">
+        <th>วันแถลง </th>
+        <th>เพศ</th>
+        <th>อายุ</th>
+        <th>ช่วงอายุ</th>
+        <th>สัญชาติ </th>
+        <th>อาชีพ </th>
+        <th>ปัจจัยเสี่ยง  </th>
+        <th>ประเภทผู้ป่วย   </th>
+        <th>จังหวัดกักกัน </th>
+        <th>วันที่ปรับปรุงข้อมูลล่าสุด  </th>
+
+		</tr>`;
+
+      data.forEach(element => {
+
+        if (element.job === null) {
+
+        tab += `<tr id="rowcovid">
+        <td>${element.txn_date} </td>
+        <td>${element.gender} </td>
+        <td>${element.age_number} </td>
+        <td>${element.age_range} </td>
+        <td>${element.nationality} </td>
+        <td>-</td>
+        <td>${element.risk} </td>
+        <td>${element.patient_type} </td>
+        <td>${element.province} </td>	
+        <td>${element.update_date} </td>	
+        </tr>`;
+
+        }
+        else {
+          tab += `<tr id="rowcovid">
+          <td>${element.txn_date} </td>
+          <td>${element.gender} </td>
+          <td>${element.age_number} </td>
+          <td>${element.age_range} </td>
+          <td>${element.nationality} </td>
+          <td>${element.job} </td>
+          <td>${element.risk} </td>
+          <td>${element.patient_type} </td>
+          <td>${element.province} </td>	
+          <td>${element.update_date} </td>	
+          </tr>`;
+        }
+      });
+      console.log(data.length);
+      document.getElementById("covid").innerHTML = tab;
+    }
+  </script>
+
+</body>
+
+</html>
